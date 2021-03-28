@@ -2,10 +2,9 @@ pragma solidity ^0.6.0;
 
 contract LearnString {
     function concatenate(
-        string colldata a,
+        string calldata a,
         string calldata b
-    ) external pure return (string) {
+    ) external pure returns (string memory) {
         return string(abi.encodePacked(a, b));
     }
 }
-
